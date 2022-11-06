@@ -1,0 +1,102 @@
+h1{
+    font-family: monospace;
+    font-style: italic;
+    width: 15%;
+    padding-left: 15px;
+}
+
+#mapholder {
+    width: 1250px; 
+    height: 600px; 
+    background-image: url(../img/polandbackground.png); 
+    position: relative; 
+    overflow: hidden;
+    background-size: cover;
+	}
+
+.seeThrough{
+    opacity: 0;
+}
+
+#mapholder ul {
+    padding: 0; 
+    margin: 0; 
+    width: 400px; 
+    height: 512px; 
+    list-style: none;
+	}
+
+#mapholder ul li div {
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 90px;
+    /*background: url(../img/map_pin.png);*/
+    cursor: pointer;
+    border: 1px dashed black;
+    border-radius: 50%;
+	}
+
+#mapholder ul li div:hover {
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border: 1px dashed black;
+    border-radius: 50%;
+    transform: scale(1.4);
+    }    
+
+#mapholder ul li.p1 div {
+    left: 645px;
+    top:160px;
+  }
+
+#wock{
+    transform: scale(.50);
+    position: absolute;
+    cursor: pointer;
+    top: 340px;
+    left: -40px;
+}
+
+#wock:hover{
+    transform: scale(.60);
+    position: absolute;
+    cursor: pointer;
+    top: 340px;
+    left: -40px;
+}
+
+
+#shockedyachty{
+    position: absolute;
+    top: 90px;
+}
+
+#dancingyachty{
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+.blink-bg{
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    animation: blinkingBackground 2s infinite;
+}
+@keyframes blinkingBackground{
+    0%		{ background-color: #10c018;}
+    25%		{ background-color: #1056c0;}
+    50%		{ background-color: #ef0a1a;}
+    75%		{ background-color: #254878;}
+    100%	        { background-color: #04a1d5;}
+}
+
