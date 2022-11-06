@@ -1,7 +1,7 @@
 h1{
     font-family: monospace;
     font-style: italic;
-    width: 15%;
+    width: 20%;
     padding-left: 15px;
 }
 
@@ -79,6 +79,7 @@ h1{
     position: absolute;
     left: 900px;
     top: 100px;
+    transform: scale(.95);
 }
 
 .hidden{
