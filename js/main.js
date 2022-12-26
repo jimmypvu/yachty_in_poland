@@ -46,17 +46,17 @@ let currentDroppable = null;
     };
 
     function enterDroppable(elem) {
-      elem.style.background = ''
-      audio.play();
-      document.querySelector('#mapholder').classList.toggle('seeThrough');
-      document.querySelector('#shockedyachty').classList.toggle('hidden');
-      document.querySelector('#dancingyachty').classList.toggle('hidden');
-      document.body.classList.toggle('blink-bg')
+        elem.style.background = ''
+        audio.play();
+        document.querySelector('#mapholder').classList.toggle('seeThrough');
+        document.querySelector('#shockedyachty').classList.toggle('hidden');
+        document.querySelector('#dancingyachty').classList.toggle('hidden');
+        document.body.classList.toggle('blink-bg')
 
     }
 
     function leaveDroppable(elem) {
-      elem.style.background = '';
+      elem.style.background = ''
       audio.pause();
       document.querySelector('#mapholder').classList.toggle('seeThrough');
       document.querySelector('#shockedyachty').classList.toggle('hidden');
@@ -64,6 +64,7 @@ let currentDroppable = null;
       document.body.classList.toggle('blink-bg')
 
     }
+    
 
     wock.ondragstart = function() {
       return false;
