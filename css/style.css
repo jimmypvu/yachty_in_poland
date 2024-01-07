@@ -5,6 +5,10 @@ h1{
     padding-left: 15px;
 }
 
+.droppable{
+    overflow: auto;
+}
+
 #mapholder {
     width: 1250px; 
     height: 600px; 
